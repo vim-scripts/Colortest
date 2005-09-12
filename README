@@ -1,0 +1,17 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1349
+
+spits out a list of all the colors IN COLOR, 
+
+also therefor functions as a test to find out whether your xterm was compiled with 256 color support to use the nice colorschemes. i have no idea what will happen to your terminal if you don't have 256 color support, but I'd imagine you'll just get a bunch of funny chars and that's about it...
+
+very handy for writing terminal colorschemes for vim - gives you the cterm color number and the rgb values... makes it very easy and fast to port "gui only" colorschemes to the 256 color terminal
+
+doesn't work with rxvt and I don't know about other terms because it uses xterm color escapes... it doesn't have the color names... it just displays each one with the color that it actually is, so you just look at it to know what color it is. if you've changed your xresources in your xdefaults file to modify the xterm colors then the RGB values won't hold true, but the actual colors and their corresponding cterm numbers will still produce whatever your xterm is set to...
+
+supports a couple of display options... if you've got a fairly normally large/decent size screen you'll probably want to run it with the switches:
+
+colortest -w -s
+
+NO WARRANTY! or ANYTHING is implied... if this breaks your computer it's not my fault... you might wanna read the code first, it's not doing anything complicated though and it works for me
+
+I probably will never update or support this in the future so whoever wants it can have it... i hereby grant a full "anything goes at any time in any way with this file" 100% free liscense to anyone who wants to mess around with the file
